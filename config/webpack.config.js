@@ -9,7 +9,10 @@ const PATHS = require('./paths');
 module.exports = {
   mode: process.env.NODE_ENV || 'production',
   entry: {
-    app: path.resolve(PATHS.SRC, 'index.js'),
+    index: path.resolve(PATHS.SRC, 'index.js'),
+    array: path.resolve(PATHS.SRC, 'array/index.js'),
+    functions: path.resolve(PATHS.SRC, 'functions/index.js'),
+    lang: path.resolve(PATHS.SRC, 'lang/index.js'),
   },
   devtool: 'inline-source-map',
   plugins: [
@@ -21,7 +24,7 @@ module.exports = {
     ]
   },
   output: {
-    filename: 'index.js',
+    filename: '[name].js',
     path: PATHS.DIST,
   }
 };
