@@ -1,4 +1,4 @@
-import { parseBooleans } from './parseBooleans';
+import parseBooleans from './parseBooleans';
 
 describe('libs/parseBooleans', () => {
   const booleans = [true, 'true', '', 'l', [], [10], ['10'], {}, { test: 'test' }, 'undefined'];

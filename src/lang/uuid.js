@@ -1,3 +1,5 @@
 import uuidgen from './uuid-lib';
 
-export const uuid = uuidgen;
+const uuid = uuidgen;
+
+export default uuid;

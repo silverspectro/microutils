@@ -1,4 +1,4 @@
-export const parseBooleans = (string) => {
+export default (string) => {
   if (string === '') {
     return true;
   }

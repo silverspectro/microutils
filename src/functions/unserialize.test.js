@@ -1,4 +1,4 @@
-import { unserialize } from './unserialize';
+import unserialize from './unserialize';
 
 describe('libs/unserialize', () => {
   test('should unserialize a function', () => {

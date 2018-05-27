@@ -1,6 +1,6 @@
 import { isNull } from 'util';
 
-export const difference = (source, inputs) => {
+export default (source, inputs) => {
   const flatArray = inputs.filter(i => (!isNull(i) && typeof i !== 'undefined')).map(i => i instanceof Object ? JSON.stringify(i) : i);
   let diffs = source
   .filter(i => (!isNull(i) && typeof i !== 'undefined'))

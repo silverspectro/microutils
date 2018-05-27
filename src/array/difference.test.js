@@ -1,4 +1,4 @@
-import { difference } from './difference';
+import difference from './difference';
 
 describe('utils/difference', () => {
   const sources1 = [
