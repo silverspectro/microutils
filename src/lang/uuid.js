@@ -1,4 +1,4 @@
-import uuidgen from './uuid-lib';
+const uuidgen = require('./uuid-lib');
 
 const uuid = uuidgen;
 
